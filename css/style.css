@@ -1,48 +1,277 @@
-@import url(reset.css);
+﻿
+body {
+	margin: 0;
+	padding: 0;
+	background: black;
 
-@font-face {
-   font-family: 'courgette';
-   src: url('../font/courgette-regular-webfont.eot');
-   src: url('../font/courgette-regular-webfont.eot?#iefix') format('embedded-opentype'),
-      url('../font/courgette-regular-webfont.woff') format('woff'),
-      url('../font/courgette-regular-webfont.ttf') format('truetype'),
-      url('../font/courgette-regular-webfont.svg#typoslabserif-lightregular') format('svg');
-   font-weight: normal;
-   font-style: normal;
+}
+ #hellopreloader>p{display:none;}#hellopreloader_preload{display: block;position: fixed;z-index: 99999;top: 0;left: 0;width: 100%;height: 100%;min-width: 1000px;background: #000000 url(http://hello-site.ru//main/images/preloads/hearts.svg) center center no-repeat;background-size:41px;}
+header{
+position: absolute;
+}
+.name-rap{
+	padding: 5px 20px;
+	color:white;
+display: block;
+position: relative;
+	font-size: 12px;
+	z-index: 10;
+font-family: 'Fjalla One', sans-serif;
+}
+.how1{
+	font-family: 'Kanit', sans-serif;
+		font-size: 17px;
+			padding-top:30px;
 }
 
-p{
-    font-family: 'courgette';
-    color:#fff;
-	-moz-user-select: none; /* Mozilla Firefox */
-	-ms-user-select: none; /* Internet Explorer (не поддерживается) */
-	-o-user-select: none; /* Opera Presto (не поддерживается) */
-	-webkit-user-select: none; /* Google Chrome, Opera Next, Safari */
-    font-size: 80px;
-    text-align: center;
-    padding-top: 20%;
-    text-shadow: 0 1px 1px #000a33;
+.Center-html {
+
+	display: flex;
+
+	justify-content: center;
+	align-items: center;
+}
+.is_overlay{ display: block; width: 100%; height: 99%; justify-content: center;
+	align-items: center; }
+#trailer {
+	display: flex;
+position: fixed;
+justify-content: center;
+	align-items: center;
+overflow: hidden;
+
 }
 
-a{
-    font-family: 'courgette';
-    color:#fff;
-	-moz-user-select: none; /* Mozilla Firefox */
-	-ms-user-select: none; /* Internet Explorer (не поддерживается) */
-	-o-user-select: none; /* Opera Presto (не поддерживается) */
-	-webkit-user-select: none; /* Google Chrome, Opera Next, Safari */
-    text-align: center;
-    text-shadow: 0 1px 1px #000a33;
+#trailer > video {
+background-size: cover;
+object-fit: cover;
+position: absolute;
+top: 0;
+left: 0;
+opacity: 0.25;
+position: absolute;
+top: 0;
+left: 0;
+width: 100%; height: 100%;
+object-fit: cover;
+}
+#main {
+	height: 60vh;
+	z-index: 9999;
+
 }
 
-video{
-    position:fixed;
-    z-index:-1;
-    min-width:100%;
-    min-height:100%;
-    overflow:hidden; 
+#NickName{
+	position: absolute;
+	cursor: default;
+	position: relative;
+	text-align: center;
+	color: white;
+	font-size: 30px;
+	font-family: 'Bungee Shade', cursive;
+
+
+}
+#Social {
+
+font-size: 16px;
+font-family: 'Graduate', cursive;
+
+}
+.Social {
+	font-size: 17px;
+	color: white;
+	font-family: 'Graduate', cursive;
+	text-decoration: none;
+	 -webkit-transition: all 0.5s ease;;
+  -moz-transition: all 0.5s ease;;
+  -o-transition: all 0.5s ease;;
+  transition: all 0.5s ease;
+}
+.Social:hover {
+	font-size: 19px;
+	color: red;
+	-webkit-transition: all 0.3s ease;;
+  -moz-transition: all 0.3s ease;;
+  -o-transition: all 0.3s ease;;
+  transition: all 0.3s ease;
 }
 
-.top_home_logo{
-background:url('/svg/vk.svg') no-repeat 50% / contain;height:19px;width:34px;margin:11px 10px 0 0
+#name {
+	display: block;
+	color: white;
+		position: absolute;
+	margin-top: 130px;
+	font-size: 20px;
+	font-family: 'Gaegu', cursive;
+
+	text-shadow:
+		-0   -4px 0   #000000,
+		 0   -4px 0   #000000,
+		-0    4px 0   #000000,
+		 0    4px 0   #000000,
+		-4px -0   0   #000000,
+		 4px -0   0   #000000,
+		-4px  0   0   #000000,
+		 4px  0   0   #000000,
+		-1px -4px 0   #000000,
+		 1px -4px 0   #000000,
+		-1px  4px 0   #000000,
+		 1px  4px 0   #000000,
+		-4px -1px 0   #000000,
+		 4px -1px 0   #000000,
+		-4px  1px 0   #000000,
+		 4px  1px 0   #000000,
+		-2px -4px 0   #000000,
+		 2px -4px 0   #000000,
+		-2px  4px 0   #000000,
+		 2px  4px 0   #000000,
+		-4px -2px 0   #000000,
+		 4px -2px 0   #000000,
+		-4px  2px 0   #000000,
+		 4px  2px 0   #000000,
+		-3px -4px 0   #000000,
+		 3px -4px 0   #000000,
+		-3px  4px 0   #000000,
+		 3px  4px 0   #000000,
+		-4px -3px 0   #000000,
+		 4px -3px 0   #000000,
+		-4px  3px 0   #000000,
+		 4px  3px 0   #000000,
+		-4px -4px 0   #000000,
+		 4px -4px 0   #000000,
+		-4px  4px 0   #000000,
+		 4px  4px 0   #000000,
+		-4px -4px 0   #000000,
+		 4px -4px 0   #000000,
+		-4px  4px 0   #000000,
+		 4px  4px 0   #000000;
 }
+
+
+
+
+/* Адаптация для Phone/... */
+@media screen and (max-width: 768px) {
+	#trailer {
+	position: fixed;
+	justify-content: center;
+	align-items: center;
+	overflow: hidden;
+	border-radius: 5px;
+	border: none;
+	}
+.Social {
+	font-size: 15px;
+	color: white;
+	font-family: 'Graduate', cursive;
+	text-decoration: none;
+	 -webkit-transition: all 0.3s ease;;
+  -moz-transition: all 0.3s ease;;
+  -o-transition: all 0.3s ease;;
+  transition: all 0.3s ease;
+}
+.Social:hover {
+	font-size: 16px;
+	color: #eaadff;
+	-webkit-transition: all 0.3s ease;;
+  -moz-transition: all 0.3s ease;;
+  -o-transition: all 0.3s ease;;
+  transition: all 0.3s ease;
+}
+}
+
+@media screen and (max-width: 414px){
+#trailer {
+position: fixed;
+justify-content: center;
+align-items: center;
+overflow: hidden;
+border-radius: 5px;
+border: none;
+}
+.Social {
+	font-size: 15px;
+	color: white;
+	font-family: 'Graduate', cursive;
+	text-decoration: none;
+	 -webkit-transition: all 0.3s ease;;
+  -moz-transition: all 0.3s ease;;
+  -o-transition: all 0.3s ease;;
+  transition: all 0.3s ease;
+}
+.Social:hover {
+	font-size: 16px;
+	color: #eaadff;
+	-webkit-transition: all 0.3s ease;;
+  -moz-transition: all 0.3s ease;;
+  -o-transition: all 0.3s ease;;
+  transition: all 0.3s ease;
+}
+#trailer > video {
+
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%; height: 100%;
+	object-fit: cover;
+	justify-content: center;
+	align-items: center;
+position: absolute;
+}
+@media screen and (max-width: 375px) {
+	#trailer > video {
+
+	justify-content: center;
+	align-items: center;
+position: absolute;
+}
+.Social {
+	font-size: 15px;
+	color: white;
+	font-family: 'Graduate', cursive;
+	text-decoration: none;
+	 -webkit-transition: all 0.3s ease;;
+  -moz-transition: all 0.3s ease;;
+  -o-transition: all 0.3s ease;;
+  transition: all 0.3s ease;
+}
+.Social:hover {
+	font-size: 16px;
+	color: #eaadff;
+	-webkit-transition: all 0.3s ease;;
+  -moz-transition: all 0.3s ease;;
+  -o-transition: all 0.3s ease;;
+  transition: all 0.3s ease;
+}
+@media screen and (max-width: 320px) {
+	#trailer > video {
+
+	justify-content: center;
+	align-items: center;
+position: absolute;
+visibility:none;
+.Social {
+	font-size: 15px;
+	color: white;
+	font-family: 'Graduate', cursive;
+	text-decoration: none;
+	 -webkit-transition: all 0.3s ease;;
+  -moz-transition: all 0.3s ease;;
+  -o-transition: all 0.3s ease;;
+  transition: all 0.3s ease;
+}
+.Social:hover {
+	font-size: 16px;
+	color: #eaadff;
+	-webkit-transition: all 0.3s ease;;
+  -moz-transition: all 0.3s ease;;
+  -o-transition: all 0.3s ease;;
+  transition: all 0.3s ease;
+}
+}
+}
+
+
+ /* Прелоад копи
+ */
